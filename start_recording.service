@@ -1,0 +1,14 @@
+[Unit]
+Description=Start Video Recording on Raspberry Pi Boot
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/izo2kor/Desktop/start_recording.py
+WorkingDirectory='/path/to/save/Videos'
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
