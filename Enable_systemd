@@ -1,0 +1,4 @@
+#Enable and start the systemd service using the following commands
+
+sudo systemctl enable start_recording.service
+sudo systemctl start start_recording.service
