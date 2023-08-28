@@ -25,3 +25,6 @@ def main():
         camera.wait_recording(18)
         # Stop recording
         camera.stop_recording()
+
+if __name__ == '__main__':
+    main()	
